@@ -1,213 +1,298 @@
+
+<!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <head>
-<title>NITHEESH T S</title>
+
+<title>restaurant</title></head>
+
+
 <style>
-  #hey{ 
+  body{ 
             animation: fadeInAnimation ease 3s; 
             animation-iteration-count: 1; 
-            animation-fill-mode: backwards ; 
+            animation-fill-mode: backwards ;
         } 
         @keyframes fadeInAnimation { 
             0% { 
                 opacity: 0; 
             } 
             100% { 
-                opacity: 1; 
+                opacity: 1;
             } 
         } 
-body{
-  margin: 0;
-}        
-* {
-  box-sizing: border-box;
-}
-.header{
-	background-color: white;
-	padding:70px;
-	text-align: center;
-	box-shadow: 5px;
-        width:100%;
+    
+#ad{
+  background-color: none;
+  background-image: url("file:///home/neethu/Documents/websites/restaurant/vv.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 820px;
 }
 @media screen and (max-width: 600px) {
-  .header {
+  #ad{
     width: 100%;
+    height: auto;
   }
 }
-h1{
-	color:black;
-	font-family: Roboto slab;
-	text-shadow: rgb();
+.navbar {
+  overflow: hidden;
+  background-color: none;
+  padding-top: 40px;
+  padding-right: 50px;
 }
-@media screen and (max-width: 600px) {
-  .h1 {
-    font-size: small;
-  }
-}
-#hey{
-  color: blueviolet;
-  font-family: Roboto slab;
-  font-size:100px;
 
-}
-#hey:hover{
-  color: black;
-}
-@media screen and (max-width: 600px) {
-  #hey {
-    text-align: center;
-    font-size: 25px;
-  }
-}
-#projects{
-    width: 100%;
-    height: auto;
-    padding: 340px;
-    text-align: center;
-}
-#project{
-    width: 100%;
-    height: auto;
-    margin-left: 120px;
-}
-@media screen and (max-width: 600px) {
-  #project {
-    margin-left: 9px;
-  }
-}
-@media screen and (max-width: 600px) {
-  #projects {
-    width: 100%;
-    padding: 9px;
-    height: auto;
-  }
-}
-.pro1{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
-    color: white;
-}
-#hand{
-    color: white;
-    text-decoration: none;
-    font-family: 'ubuntu';
-    padding: 7px;
-    letter-spacing: 2px;
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
   text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
 }
-.fa:hover {
-    opacity: 0.7;
+.navbar a:hover{
+  background-color: black;
+  border-radius: 17px;
+}
+@media screen and (max-width: 600px) {
+  .navbar a{
+    width: 100%;
+    text-align: center;
+
+  }
 }
 
-.fa-facebook {
-  background: none;
-  color: white;
-}
-.fa-github {
-  background: none;
-  color: white;
-}
-.fa-instagram {
-  background:none;
-  color: white;
-}
-.fa-linkedin {
-  background: none;
-  color: white;
-}
-#footer{
-  width: 100%;
+#f{
+  background-color: none;
+  width: auto;
   height: auto;
-  background-color: black;
-  padding: 40px;
-  text-align: center;
+  
+}
+#heading{
+  color: white;
+  font-family:'sans-serif';
   float: left;
+  padding-left: 40px;
+  padding-top: 30px;
 }
-h4{
-  color:white;
+@media screen and (max-width: 600px) {
+  #heading{
+    width: 100%;
+    text-align: center;
+    padding-right: 3px;
+    padding-left: 3px;
+
+  }
 }
-jj1{
+
+#ff{
+  color: white;
+  text-decoration: none;
+  background-color: none;
+}
+#pp{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  padding-left: 60px;
+}
+@media screen and (max-width: 600px) {
+  #pp{
+    width: 100%;
+    text-align: center;
+    padding-right: 3px;
+    padding-left: 4px;
+
+  }
+}
+#content{
+  background-color: none;
   width: 100%;
   height: auto;
-  background-color: black;
+  margin-top: 200px;
 }
-#jj{
-  color: black;
-  font-family: 'Times New Roman', Times, serif;
-  text-align: center;
-  letter-spacing: 2px;
-}
-img{
-  width: 25%;
-}	
-</style>
-</head>
-<body>
-<div class="header"><h3 id="hey">Nitheesh T S<h3 id="jj">Developer,Artist</h3></h3></div>
-<div id="projects" style="background-image: linear-gradient(blueviolet,black);">
-    <h1 class="pro1" id="proje">Projects</h1>
-    <div id="project" style="background-color: none; margin-left: 1px;">
-    <ul id="hand">
-        <li style="text-align: left;list-style-type: none;">Radio Frequency Identification System(Mini project)</li><br>
-        <li style="text-align: left;list-style-type: none;">Online Handwritten Character Recognition using Neural Network(Main project)</li>
-    </ul>
-</div>
-</div>
-<div id="projects" style="background-color: black">
-    <h1 class="pro1" id="course">Courses</h1>
-    <ul id="hand">
-        <div id="project" style="background-color: none; margin-left: 1px;">
-        <li style="text-align: left;list-style-type: none;">Architecting with Google Compute Engine Specialization from Coursera</li><br>
-        <li style="text-align: left;list-style-type: none;">Android Application Development course from Udemy</li><br>
-        <li style="text-align: left;list-style-type: none;">DIP.IN PROFESSIONAL WEB DESIGNING & HOSTING from Kerala Computer Saksharatha Mission</li><br>
-    </ul>
-</div>
-</div>
-<div id="projects" style="background-image: linear-gradient(blueviolet,black);">
-    <h1 class="pro1" id="achivements">Achievements</h1>
-    <ul id="hand">
-        <div id="project" style="background-color: none; margin-left: 1px;">
-        <li style="text-align: left;list-style-type: none;">For the active Volunteering in the two day event I install 3.0 and django conducted by Foces.</li><br>
-	 <li style="text-align: left;list-style-type: none;">For successful completion of the Soft skills and Life skills held as part of the Skilling Initiative conducted by Mahindra Pride Classroom.</li><br>	
-        <li style="text-align: left;list-style-type: none;">For the meritorious and outstanding service as the Developer Lead of the
-          Forum of Computer Engineering Students and FOSS Cell
-          in the academic year 2019-2020.</i><br>
-          <br> <li style="text-align: left;list-style-type: none;">From Coursera : Google Cloud Platform Fundamentals: Core Infrastructure ,Essential Google Cloud Infrastructure: Foundation , Essential Google Cloud Infrastructure: Core Services ,
-          Elastic Google Cloud Infrastructure: Scaling and Automation , Reliable Google Cloud Infrastructure: Design and Process.View certificate click <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/JHBVQUXF6FZN">here</a></li>
-       </ul>
- </div>
-</div>
-<div id="projects" style="background-color: black">
-    <h1 class="pro1" id="foces">FOCES</h1>
-    <ul id="hand">
-        <li style="text-align: left; list-style-type: none;">Leading as the Developer role in the Forum of computer engineering students and FOSS cell 2019-2020.Find link on <a href="https://f0ces.github.io/">foces</a></li>
-    </ul>
-</div>
-<div id="projects" style="background-image: linear-gradient(blueviolet,black);">
-	  <img src="nn.png" alt="nitheeshts">
 
-  <h1 class="pro1" id="about">About</h1>
-  <ul id="hand">
-      <li style="text-align: left; list-style-type: none;  margin-left: 1px;">Hi, I am Nitheesh T S, a Btech graduate student at College of Engineering Chengannur. My special skills in Programming languages like
-        C,C++,Java,Python etc. I am also familiar with SQL database. Knowledge in scripting languages like Javascript and PHP. Interested in web development and making beautiful websites.
-        I have  a little knowledge in Cloud computing.</li>
-  </ul>
-</div>
-<div id="footer">
-  <h4 style="font-family: 'Times New Roman', Times,; letter-spacing: 1px;">Thanks for visiting my Page</h4>
-    <h4 style="font-family: 'Times New Roman', Times,; letter-spacing: 1px;">Contact me on gmail nitheeshts956@gmail.com or <a href="https://www.facebook.com/nitheeshts.lakkoor" class="fa fa-facebook"></a>
-    <a href="https://www.instagram.com/ts_nitheesh/" class="fa fa-instagram"></a><a href="https://github.com/nitheeshts96" class="fa fa-github"></a>  
-   <a href="https://www.linkedin.com/in/nitheeshts" class="fa fa-linkedin"></a></h4>
-    </h4>
+
+#content1{
+  color: white;
+  padding-left: 450px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#content2{
+  color: white;
+  padding-left: 250px;
+  background-color: blue;
+  font-size: 60px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#content3{
+  color: white;
+  padding-left: 450px;
+  font-family: 'Times New Roman', Times, serif;
+}
+@media screen and (max-width: 600px) {
+  #content1{
+    width: 100%;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-align: center;
+
+  }
+}
+@media screen and (max-width: 600px) {
+  #content2{
+    width: 100%;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  #content3{
+    width: 100%;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-align: center;
+  }
+}
+#buton{
+   background-color: none;
+   padding-top: 40px;
+ } 
+ #buton1{
+   width: 197px;
+   height: 60px;
+   background-color: white;
+   border-radius: 37px;
+   border: 1px solid white;
+ }
+ #buton1:hover{
+  border: 1px solid grey;
+  background-color: grey;
+  
+}
+
+
+#f{
+  color: black;
+  text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  #f{
+    width: 100%;
+
+  }
+}
+#f:hover{
+  color: white;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: rgb(248, 233, 233);
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+
+<body>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <h1><font color="white"><u>Menu</u></font></h1><br>
+      <a href="file:///home/neethu/Documents/websites/restaurant/menu.html">Item 1</a>
+      <a href="file:///home/neethu/Documents/websites/restaurant/menu.html">Item 2</a>
+      <a href="file:///home/neethu/Documents/websites/restaurant/menu.html">Item 3</a>
+      <a href="file:///home/neethu/Documents/websites/restaurant/menu.html">Item 4</a>
     </div>
-    </body>
-    </html>
+  </div>
+<div id="ad">
+  <div id="f">
+  <h1 id="heading" style="font-weight: bolder;"><a id="ff" href="file:///home/neethu/Documents/websites/restaurant/res.html">My Restaurant</a><p id="pp">House of New Taste</p></h1></div>
+
+  <div class="navbar">
+    <a href="file:///home/neethu/Documents/websites/restaurant/log.html">Order Now</a>
+    <a><span style="font-size:16px;cursor:pointer" onclick="openNav()">Menu</span></a>
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>       
+
+  </div>
+  <div id="content">
+
+    <h2 id="content1">Welcome to My Restaurant, House of New Taste</h2>
+    
+    
+
+      <h1 id="content2" >Due to covid-19 our Services are digitalized</h1>
+
+
+      <h1 id="content3">Online Order with Zero Transaction Fees.</h1>
+
+      <div id="buton">
+        <center>  <a href="file:///home/neethu/Documents/websites/restaurant/log.html" id="f"><button id="buton1" value="Order Now" name="Order Now">Order Now</button>
+        </a></center></div>
+      
+      </div> 
+
+
+</div><!--end of div ab -->
+
+
+
+
+</body>
+</html>
