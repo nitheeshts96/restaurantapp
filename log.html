@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<head>
+  <script>
+    function validateForm() {
+      var x = document.forms["myform"]["email"].value;
+      var y = document.forms["myform"]["pwd"].value;
+
+      if (x == "" || y ==""){
+        alert("Username or Password must be filled out");
+        return false;
+      }
+    }
+</script>
+<title>restaurant</title></head>
+<style>
+ body{ 
+            animation: fadeInAnimation ease 3s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: backwards ;
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1;
+            } 
+        }  
+#da{
+  background-color: none;
+  background-image: url("file:///home/neethu/Documents/websites/restaurant/vv.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 820px;
+}
+@media screen and (max-width: 600px) {
+  #da{
+    width: 50px;
+    height: auto;
+    background-image: none;
+  }
+}
+#ab{
+  background-color: none;
+  width: auto;
+  height: auto;
+  padding-top: 100px;
+}
+@media screen and (max-width: 600px) {
+  #ab{
+    width: 100%;
+    height: auto;
+    padding-top: 0px;
+  }
+}
+.container{
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 600px;
+  height: 400px;
+  background-image: linear-gradient(green,grey);
+  border-radius: 17px;
+  box-shadow: white;
+}
+@media screen and (max-width: 600px) {
+  .container{
+    width: 545px;
+    height: auto;
+  }
+}
+</style>
+
+<body>
+
+<div id="da">
+  <div id="ab">
+  <div class="container">
+    <h2 style="color: white;">Sign in</h2>
+    <form name="myform" action="file:///home/neethu/Documents/websites/restaurant/menu.html" method="POST" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="email" style="color: white;">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="pwd" style="color: white;">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password" name="pwd">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="remember"><font style="color: white;">Remember me</font></label>
+      </div>
+      <center><button type="submit" class="btn btn-default" onclick="validateform()">Submit</button></center><br>
+      <center><a href="file:///home/neethu/Documents/websites/restaurant/res.html">home</a></center>
+    </form>
+  </div>
+</div>
+</div>
+</body>
+</html>

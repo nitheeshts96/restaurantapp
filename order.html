@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<head>
+
+
+
+    <script type="text/javascript">
+  
+     function showMessage(){
+            var message = document.getElementById("aa").value;
+            display_message.innerHTML= message;
+            var me = document.getElementById("bbb").value;
+            d_message.innerHTML= me;
+            var mes = document.getElementById("cc").value;
+            di_message.innerHTML= mes;
+            var mess = document.getElementById("dd").value;
+            dis_message.innerHTML= mess;
+            var messa = document.getElementById("dd").value * document.getElementById("cc").value;
+            disp_message.innerHTML= messa;
+
+if (message == "" || me =="" || mes == "" || mess == ""){
+      alert("Detials must be filled out");
+      return false;
+      exit();
+    }
+    if(isNaN(message))
+    {
+      alert("Invalid Table No:");
+      return false;
+      exit();
+    }
+    if(message>10)
+    {
+      alert("Invalid Table No:");
+      return false;
+      exit();
+    }
+    if(isNaN(mes))
+    {
+      alert("Invalid Price:");
+      return false;
+      exit();
+    }
+    if(isNaN(mess))
+    {
+      alert("Invalid Item Unit:");
+      return false;
+      exit();
+    }
+    if(!(isNaN(me)))
+    {
+      alert("Invalid Item Name:");
+      return false;
+      exit();
+    }
+        }
+    </script>
+
+
+
+<title>order</title></head>
+
+
+<style>
+
+    
+#ad{
+  background-color: none;
+  background-image: url("file:///home/neethu/Documents/websites/restaurant/vv.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 820px;
+}
+@media screen and (max-width: 600px) {
+  #ad{
+    width: 100%;
+    height: auto;
+  }
+}
+#ab{
+  background-color: none;
+  width: auto;
+  height: auto;
+  padding-top: 100px;
+}
+@media screen and (max-width: 600px) {
+  #ab{
+    width: 100%;
+    height: auto;
+    padding-top: 0px;
+  }
+}
+#bb{
+  background-color:cadetblue;
+  border-radius: 17px;
+  width: auto;
+  height: 500px;
+}
+#lab{
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#buton{
+   background-color: none;
+   padding-top: 40px;
+ } 
+ #buton1{
+   width: 197px;
+   height: 60px;
+   background-color: white;
+   border-radius: 37px;
+   border: 1px solid grey;
+ }
+ #buton1:hover{
+  border: 1px solid grey;
+  background-color: grey;
+  color: antiquewhite;
+  
+}
+#qq{
+  color: white;
+  padding-left: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+</style>
+<body>
+<div id="ad">
+    <div id="ab">
+        <div class="container">
+          <h2 style="color: white;">Enter the Detials</h2>
+              <label for="text" style="color: white;">Table No:</label>
+              <input type="text" class="form-control" id="aa" placeholder="Enter Table No:" name="a">
+              
+              <label for="text" style="color: white;">Item Name</label>
+              <input type="text" class="form-control" id="bbb" placeholder="item name:" name="b">
+
+              
+              <label for="text" style="color: white;">Item Price:</label>
+                <input type="text" class="form-control" id="cc" placeholder="Enter Item Price" name="c">
+              
+                <label for="text" style="color: white;">Item Units:</label>
+                <input type="text" class="form-control" id="dd" placeholder="Enter Item Units" name="d"><br><br><br><br><br>
+            <center><input type="submit" onclick="showMessage()" value="submit" /></center><br>
+<div id="bb">
+  <h3 id="lab">
+            <label><u>My Cart</u></label></h3>
+            <p id="qq"> Table No: <span id = "display_message"></span> </p> 
+            <p id="qq">Item Name : <span id = "d_message"></span> </p>  
+            <p id="qq"> Item Price:<span id = "di_message"></span> </p> 
+            <p id="qq">Item Units :<span id = "dis_message"></span> </p> 
+            <p id="qq">Total Price :<span id = "disp_message"></span> </p> 
+
+
+
+
+            <center><a href="file:///home/neethu/Documents/websites/restaurant/order.html?a=&b=&c=&d="><input type="submit" value="order again" id="buton1"  /></a></center><br>
+            <center><input type="submit" value="pay now" id="buton1" /></center><br><br><br><br>
+
+            <center><a href="file:///home/neethu/Documents/websites/restaurant/res.html">home</a></center>
+</div>
+            
+        </div>
+      </div>
+</div>
+
+</body>
+</html>
